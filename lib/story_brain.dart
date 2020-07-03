@@ -44,6 +44,14 @@ class StoryBrain {
         choice2: '')
   ];
 
+  bool buttonShouldBeVisible() {
+    if (_storyNumber == 1 || _storyNumber == 2) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   String getStory() {
     return _storyData[_storyNumber].storyTitle;
   }
